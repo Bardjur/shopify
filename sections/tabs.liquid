@@ -33,37 +33,29 @@
 
     </div>
   </div>
-  <script>
+
+{% javascript %}
   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
   const buttons = tabsBlock.querySelectorAll(".header button");
   const tabs = tabsBlock.querySelectorAll(".body .tab");
   buttons.forEach(btn => addEventListener('click', openTab));
   
   function openTab(e){
-    console.log('e.target.dataset.button');
-    console.log(e.currentTarget);
-    buttons.forEach(btn => btn.classList.remove('active'));
-    
-    tabs.forEach(tab => {
+    changeClass(e.target.dataset.button, 'button', buttons);
+    changeClass(e.target.dataset.button, 'tab', tabs);
+  }
 
-      if( e.target.dataset.button == tab.dataset.tab){
-        console.log(tab.dataset.tab)
-        console.log(e.target.dataset.button);
-        tab.classList.add('active')
+  function changeClass(activeTab, nameElem, elems){
+    elems.forEach(elem => {
+      if( activeTab == elem.dataset[nameElem]){
+        elem.classList.add('active')
       } else {
-        tab.classList.remove('active')
+        elem.classList.remove('active')
       }
     });
-
-    e.target.classList.add('active');
   }
-  </script>
-</div>
-{% javascript %}
-
-
 {% endjavascript %}
-
+</div>
 
 
 {% schema %}
