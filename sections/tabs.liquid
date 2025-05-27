@@ -19,7 +19,6 @@
   {%- if section.settings.header != blank -%}
     <h2>{{ section.settings.header }}</h2>
   {%- endif -%}
-  
   <div class="tabs">
     <div class="header">
       <button type="button" class="active" aria-button="1">slide1</button>
@@ -36,15 +35,19 @@
   </div>
 </div>
 {% javascript %}
-
   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
   const buttons = tabsBlock.querySelectorAll(".header button");
   const tabs = tabsBlock.querySelectorAll(".body tab");
   buttons.addEventListener('click', openTab);
   function openTab(e){
-    console.log(fgdfdg);
+    console.log("dgdfgfd");
   }
+
 {% endjavascript %}
+
+<script>
+
+  </script>
 
 {% schema %}
   {
@@ -66,6 +69,9 @@
         "id": "title",
         "label": "hz"
       }
+    ],
+    "presets":[
+      {"name": "Tabs"}
     ]
   }
 {% endschema %}
