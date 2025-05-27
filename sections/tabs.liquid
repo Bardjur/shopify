@@ -21,35 +21,50 @@
   {%- endif -%}
   <div class="tabs">
     <div class="header">
-      <button type="button" class="active" aria-button="1" onclick="console.log(65465)">slide1</button>
-      <button type="button" aria-button="2">slide2</button>
-      <button type="button" aria-button="3">slide3</button>
+      <button type="button" class="active" data-button="1">slide1</button>
+      <button type="button" data-button="2">slide2</button>
+      <button type="button" data-button="3">slide3</button>
     </div>
 
     <div class="body">
-      <div aria-tab="1" class="tab active">slide1</div>
-      <div aria-tab="2" class="tab">slide2</div>
-      <div aria-tab="3" class="tab">slide3</div>
+      <div data-tab="1" class="tab active">slide1</div>
+      <div data-tab="2" class="tab">slide2</div>
+      <div data-tab="3" class="tab">slide3</div>
 
     </div>
   </div>
-</div>
-{% javascript %}
+  <script>
   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
   const buttons = tabsBlock.querySelectorAll(".header button");
-  const tabs = tabsBlock.querySelectorAll(".body tab");
-  buttons.addEventListener('click', e => {
-    buttons.forEach(tab => tab.classList.remove('active'));
-  });
+  const tabs = tabsBlock.querySelectorAll(".body .tab");
+  buttons.forEach(btn => addEventListener('click', openTab));
+  
   function openTab(e){
+    console.log('e.target.dataset.button');
+    console.log(e.currentTarget);
+    buttons.forEach(btn => btn.classList.remove('active'));
     
+    tabs.forEach(tab => {
+
+      if( e.target.dataset.button == tab.dataset.tab){
+        console.log(tab.dataset.tab)
+        console.log(e.target.dataset.button);
+        tab.classList.add('active')
+      } else {
+        tab.classList.remove('active')
+      }
+    });
+
+    e.target.classList.add('active');
   }
+  </script>
+</div>
+{% javascript %}
+
 
 {% endjavascript %}
 
-<script>
 
-  </script>
 
 {% schema %}
   {
