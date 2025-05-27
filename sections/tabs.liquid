@@ -5,6 +5,9 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}">
+  {%- if section.settings.header != blank -%}
+    <h2>{{ section.settings.header }}</h2>
+  {%- endif -%}
 fgdfgdffdfdg
 </div>
 
@@ -18,6 +21,15 @@ fgdfgdffdfdg
         "type": "text",
         "id": "header",
         "label": "Header"
+      },
+      {
+        "type": "header",
+        "content": "test"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "hz"
       }
     ]
   }

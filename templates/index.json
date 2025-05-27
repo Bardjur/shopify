@@ -11,9 +11,7 @@
   "sections": {
     "tabs": {
       "type": "Tabs",
-      "settings": {
-        "header": "qqqqqqq"
-      }
+      "settings": {}
     }
   },
   "order": [
