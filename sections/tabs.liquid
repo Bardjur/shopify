@@ -21,7 +21,7 @@
   {%- endif -%}
   <div class="tabs">
     <div class="header">
-      <button type="button" class="active" aria-button="1">slide1</button>
+      <button type="button" class="active" aria-button="1" onclick="console.log(65465)">slide1</button>
       <button type="button" aria-button="2">slide2</button>
       <button type="button" aria-button="3">slide3</button>
     </div>
@@ -39,7 +39,7 @@
   const buttons = tabsBlock.querySelectorAll(".header button");
   const tabs = tabsBlock.querySelectorAll(".body tab");
   buttons.addEventListener('click', e => {
-    console.log("dgdfgfd");
+    buttons.forEach(tab => tab.classList.remove('active'));
   });
   function openTab(e){
     
