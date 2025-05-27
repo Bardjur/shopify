@@ -35,7 +35,7 @@
   </div>
 
 </div>
-{% javascript %}
+<script>
 document.addEventListener("DOMContentLoaded", (event) => {
   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
   const buttons = tabsBlock.querySelectorAll(".header button");
@@ -57,8 +57,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   }
 });
-
-{% endjavascript %}
+<script>
 
 {% schema %}
   {
