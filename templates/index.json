@@ -9,12 +9,12 @@
  */
 {
   "sections": {
-    "Tabs": {
-      "type": "tabs",
+    "tabs": {
+      "type": "Tabs",
       "settings": {}
     }
   },
   "order": [
-    "Tabs"
+    "tabs"
   ]
 }
