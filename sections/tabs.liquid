@@ -36,25 +36,28 @@
 
 </div>
 {% javascript %}
-const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
-const buttons = tabsBlock.querySelectorAll(".header button");
-const tabs = tabsBlock.querySelectorAll(".body .tab");
-buttons.forEach(btn => addEventListener('click', openTab));
+document.addEventListener("DOMContentLoaded", (event) => {
+  const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
+  const buttons = tabsBlock.querySelectorAll(".header button");
+  const tabs = tabsBlock.querySelectorAll(".body .tab");
+  buttons.forEach(btn => addEventListener('click', openTab));
 
-function openTab(e){
-  changeClass(e.target.dataset.button, 'button', buttons);
-  changeClass(e.target.dataset.button, 'tab', tabs);
-}
+  function openTab(e){
+    changeClass(e.target.dataset.button, 'button', buttons);
+    changeClass(e.target.dataset.button, 'tab', tabs);
+  }
 
-function changeClass(activeTab, nameElem, elems){
-  elems.forEach(elem => {
-    if( activeTab == elem.dataset[nameElem]){
-      elem.classList.add('active')
-    } else {
-      elem.classList.remove('active')
-    }
-  });
-}
+  function changeClass(activeTab, nameElem, elems){
+    elems.forEach(elem => {
+      if( activeTab == elem.dataset[nameElem]){
+        elem.classList.add('active')
+      } else {
+        elem.classList.remove('active')
+      }
+    });
+  }
+});
+
 {% endjavascript %}
 
 {% schema %}
