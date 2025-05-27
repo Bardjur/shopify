@@ -38,9 +38,11 @@
   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
   const buttons = tabsBlock.querySelectorAll(".header button");
   const tabs = tabsBlock.querySelectorAll(".body tab");
-  buttons.addEventListener('click', openTab);
-  function openTab(e){
+  buttons.addEventListener('click', e => {
     console.log("dgdfgfd");
+  });
+  function openTab(e){
+    
   }
 
 {% endjavascript %}
