@@ -46,13 +46,17 @@
   {%- if section.settings.header != blank -%}
     <h2>{{ section.settings.header }}</h2>
   {%- endif -%}
+
   <div class="tabs">
     <div class="tabs-header">
       {% content_for 'block', type:"_tab_nav", id:"tab_order" %}
+
     </div>
 
     <div class="tabs-body">
       {% content_for 'blocks' %}
+
+
     </div>
   </div>
 
@@ -89,7 +93,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     "name": "Tabs",
     "tag":"section",
     "class": "section",
-    "blocks": [{"type": "_tab_nav"}, {"type": "_tab_content"},{"type": "benefits"}],
+    "blocks": [{"type": "_tab_nav"}, {"type": "_tab_content"}],
     "settings": [
       {
         "type": "text",
