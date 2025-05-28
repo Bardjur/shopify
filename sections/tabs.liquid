@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const buttons = tabsBlock.querySelectorAll(".tabs-header .head-btn");
   const tabs = tabsBlock.querySelectorAll(".tabs-body .tab");
   buttons.forEach(btn => addEventListener('click', openTab));
-
+  console.log(buttons);
   function openTab(e){
     console.log(e);
     changeClass(e.target.dataset.button, 'button', buttons);
