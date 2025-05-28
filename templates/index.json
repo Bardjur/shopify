@@ -11,7 +11,23 @@
   "sections": {
     "tabs": {
       "type": "Tabs",
-      "settings": {}
+      "blocks": {
+        "benefits_rRBBhq": {
+          "type": "benefits",
+          "name": "Benefits",
+          "settings": {
+            "title": "<p>What Happens After You Clear Stuck Mucus with RespiClear</p>"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "benefits_rRBBhq"
+      ],
+      "settings": {
+        "header": "",
+        "title": ""
+      }
     }
   },
   "order": [
