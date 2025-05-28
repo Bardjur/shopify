@@ -48,6 +48,8 @@
   {%- endif -%}
   <div class="tabs">
     <div class="tabs-header">
+      {% content_for 'block', type:"_tab_nav", id:"tab_order" %}
+
       <button type="button" class="head-btn active" data-button="1">Benefits</button>
       <button type="button" class="head-btn " data-button="2">180 Day Breathe Easy Guarantee</button>
       <button type="button" class="head-btn " data-button="3">Reviews</button>
@@ -56,7 +58,6 @@
     <div class="tabs-body">
       <div data-tab="1" class="tab active">
         {% content_for 'blocks' %}
-        
       </div>
       <div data-tab="2" class="tab">
         Your lungs didn’t get congested overnight—and real healing takes time.
@@ -83,15 +84,15 @@
 <script>
 document.addEventListener("DOMContentLoaded", (event) => {
   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
-  const buttons = tabsBlock.querySelectorAll(".tabs-header .head-btn");
+  const buttons = tabsBlock.querySelectorAll(".tabs-header .tab-nav-btn");
   const tabs = tabsBlock.querySelectorAll(".tabs-body .tab");
   buttons.forEach(btn => btn.addEventListener('click', openTab));
   console.log(buttons);
 
   function openTab(e){
     console.log(e);
-    changeClass(e.target.dataset.button, 'button', buttons);
-    changeClass(e.target.dataset.button, 'tab', tabs);
+    changeClass(e.target.dataset.order, 'order', buttons);
+    changeClass(e.target.dataset.order, 'tab', tabs);
   }
 
   function changeClass(activeTab, nameElem, elems){
@@ -111,7 +112,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     "name": "Tabs",
     "tag":"section",
     "class": "section",
-    "blocks": [{ "type": "@theme" }],
+    "blocks": [{"type": "_tab_nav"}, {"type": "_tab_content"}],
     "settings": [
       {
         "type": "text",
@@ -119,8 +120,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
         "label": "Header"
       }
     ],
-    "presets":[
-      {"name": "Tabs"}
-    ]
+    "presets":[{
+      "name": "Tabs",
+      "blocks": [
+        {
+          "type":"_tab_nav",
+          "settings": {
+            "tab_order": 0,
+            "title": "enter uniqe order!!!"
+          }
+        },
+        {
+          "type":"_tab_content",
+          "settings": {
+            "tab_order": 0,
+            "title": "enter uniqe order!!!"
+          }
+        },
+      ]
+    }]
   }
 {% endschema %}
