@@ -11,6 +11,52 @@
   "sections": {
     "tabs": {
       "type": "Tabs",
+      "blocks": {
+        "tab_content_EhPJdW": {
+          "type": "_tab_content",
+          "name": "Tab content",
+          "settings": {
+            "tab_order": 0
+          },
+          "blocks": {
+            "benefits_VBNC7H": {
+              "type": "benefits",
+              "settings": {
+                "title": "dgdfggdff"
+              },
+              "blocks": {
+                "benefits_list_item_wQ4QhQ": {
+                  "type": "_benefits_list_item",
+                  "name": "List item",
+                  "settings": {
+                    "subtitle": "reerttretre",
+                    "text": "<p>retertertetr</p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "benefits_list_item_wQ4QhQ"
+              ]
+            }
+          },
+          "block_order": [
+            "benefits_VBNC7H"
+          ]
+        },
+        "tab_order": {
+          "type": "_tab_nav",
+          "static": true,
+          "settings": {
+            "tab_order": 0,
+            "tab_title": "yyguygugg"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "tab_content_EhPJdW"
+      ],
       "settings": {
         "header": ""
       }
