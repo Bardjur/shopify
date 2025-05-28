@@ -11,50 +11,6 @@
   "sections": {
     "tabs": {
       "type": "Tabs",
-      "blocks": {
-        "tab_content_bVFtqB": {
-          "type": "_tab_content",
-          "name": "Tab content",
-          "settings": {},
-          "blocks": {
-            "benefits_RDYKQY": {
-              "type": "benefits",
-              "name": "Benefits",
-              "settings": {
-                "title": ""
-              },
-              "blocks": {
-                "benefits_list_item_NC89MP": {
-                  "type": "_benefits_list_item",
-                  "settings": {
-                    "subtitle": "Subtitle.",
-                    "text": "<p>loream...<p>"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "benefits_list_item_NC89MP"
-              ]
-            }
-          },
-          "block_order": [
-            "benefits_RDYKQY"
-          ]
-        },
-        "tab_order": {
-          "type": "_tab_nav",
-          "static": true,
-          "settings": {
-            "tab_order": 0,
-            "tab_title": "uuuhuhuh"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "tab_content_bVFtqB"
-      ],
       "settings": {
         "header": ""
       }
