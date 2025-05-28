@@ -11,7 +11,24 @@
   "sections": {
     "tabs": {
       "type": "Tabs",
-      "settings": {}
+      "blocks": {
+        "text_9MLEGG": {
+          "type": "text",
+          "name": "test",
+          "settings": {
+            "text": "<p>Welcome to our store</p>",
+            "alignment": "right"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_9MLEGG"
+      ],
+      "settings": {
+        "header": "",
+        "title": ""
+      }
     }
   },
   "order": [
