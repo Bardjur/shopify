@@ -112,11 +112,12 @@
 <script>
 document.addEventListener("DOMContentLoaded", (event) => {
   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
-  const buttons = tabsBlock.querySelectorAll(".tabs-header button");
+  const buttons = tabsBlock.querySelectorAll(".tabs-header .head-btn");
   const tabs = tabsBlock.querySelectorAll(".tabs-body .tab");
   buttons.forEach(btn => addEventListener('click', openTab));
 
   function openTab(e){
+    console.log(e);
     changeClass(e.target.dataset.button, 'button', buttons);
     changeClass(e.target.dataset.button, 'tab', tabs);
   }
@@ -138,7 +139,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     "name": "Tabs",
     "tag":"section",
     "class": "section",
-    "blocks": [{ "type": "@theme" }, { "type": "@app" }],
+    "blocks": [{ "type": "@theme" }],
     "settings": [
       {
         "type": "text",
