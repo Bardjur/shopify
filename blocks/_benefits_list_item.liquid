@@ -6,7 +6,6 @@
       | image_tag: width: 100
     }}
   {% endif %}
-  🔋 
   <div>
     <h4>
       {{ block.settings.subtitle }}
@@ -41,7 +40,11 @@
   ],
   "presets":[
     {
-      "name": "List item"
+      "name": "List item",
+      "settings": {
+        "subtitle": "Subtitle.",
+        "text": "<p>loream...<p>"
+      },
     }
   ]
 }
