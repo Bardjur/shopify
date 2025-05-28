@@ -6,7 +6,6 @@
 
   <ul>
     {% content_for 'blocks' %}
- 
   </ul>
 </div>
 
@@ -23,7 +22,14 @@
   ],
   "blocks": [{"type": "_benefits_list_item"}],
   "presets": [
-    { "name": "Benefits" }
+    { 
+      "name": "Benefits",
+      "blocks": [
+        {
+          "type":"_benefits_list_item"
+        }
+      ]
+    }
   ]
 }
 {% endschema %}
