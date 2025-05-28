@@ -56,7 +56,9 @@
         "tab_content_3C8nt3": {
           "type": "_tab_content",
           "name": "Tab content",
-          "settings": {},
+          "settings": {
+            "tab_order": 0
+          },
           "blocks": {
             "benefits_t7CeDV": {
               "type": "benefits",
