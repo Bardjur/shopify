@@ -1,0 +1,24 @@
+{% content_for 'blocks' %}
+
+{% schema %}
+{
+  "name": "Tab content",
+  "tag": null,
+  "settings": [
+    {
+      "type": "number",
+      "id": "tab_order",
+      "label": "Number (same in content!)"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+    }
+  ],
+  "blocks": [{"type": "benefits"}],
+  "presets": [{
+    "name": "Tab content"
+  }]
+}
+{% endschema %}
