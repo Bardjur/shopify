@@ -1,0 +1,43 @@
+<li>
+  {% if block.settings.badge != blank %}
+    {{
+      block.settings.badge
+      | image_url
+      | image_tag: width: 100
+    }}
+  {% endif %}
+  🔋 
+  <div>
+    <h4>
+      {{ block.settings.subtitle }}
+    </h4>
+
+    <p>
+      {{ block.settings.text }}
+    </p>
+  </div>
+</li>
+
+{% schema %}
+{
+  "name": "list-item",
+  "tag":null,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "badge",
+      "label": "Badge"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    }
+  ]
+}
+{% endschema %}
