@@ -44,6 +44,45 @@
             "benefits_VBNC7H"
           ]
         },
+        "tab_nav_MUBEek": {
+          "type": "_tab_nav",
+          "name": "Tab button",
+          "settings": {
+            "tab_order": 1,
+            "tab_title": "hjhjhjhjjh"
+          },
+          "blocks": {}
+        },
+        "tab_content_3C8nt3": {
+          "type": "_tab_content",
+          "name": "Tab content",
+          "settings": {},
+          "blocks": {
+            "benefits_t7CeDV": {
+              "type": "benefits",
+              "settings": {
+                "title": "dgdfggdff"
+              },
+              "blocks": {
+                "benefits_list_item_TteDNt": {
+                  "type": "_benefits_list_item",
+                  "name": "List item",
+                  "settings": {
+                    "subtitle": "hghghhghg",
+                    "text": "<p>awawwaawawaw</p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "benefits_list_item_TteDNt"
+              ]
+            }
+          },
+          "block_order": [
+            "benefits_t7CeDV"
+          ]
+        },
         "tab_order": {
           "type": "_tab_nav",
           "static": true,
@@ -55,7 +94,9 @@
         }
       },
       "block_order": [
-        "tab_content_EhPJdW"
+        "tab_content_EhPJdW",
+        "tab_nav_MUBEek",
+        "tab_content_3C8nt3"
       ],
       "settings": {
         "header": ""
