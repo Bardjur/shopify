@@ -106,6 +106,7 @@
 
     </div>
   </div>
+  {% content_for 'blocks' %}
 
 </div>
 <script>
@@ -137,6 +138,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     "name": "Tabs",
     "tag":"section",
     "class": "section",
+    "blocks": [{ "type": "@theme" }, { "type": "@app" }],
     "settings": [
       {
         "type": "text",
