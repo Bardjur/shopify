@@ -55,37 +55,8 @@
 
     <div class="tabs-body">
       <div data-tab="1" class="tab active">
-        <h2>What Happens After You Clear Stuck Mucus with RespiClear</h2>
-        <ul>
-          <li>
-            🔋 
-            <div>
-              <h4>Breathe Easier Fast</h4>
-              <p>Loosens and flushes thick, stuck mucus from your lungs in 4 days.</p>
-            </div>
-          </li>
-          <li>
-            💨 
-            <div>
-              <h4>Restore Full Oxygen Intake</h4>
-              <p>Raises O2 levels above 95% and keeps them there.</p>
-            </div>
-          </li>
-          <li>
-            ⚡ 
-            <div>
-              <h4>Boost Energy and Sleep</h4>
-              <p>More oxygen = better sleep, more stamina, better mood.</p>
-            </div>
-          </li>
-          <li>
-            🛡️ 
-            <div>
-              <h4>Protect Lung Health Long-Term</h4>
-              <p>Flush out Black Carbon and protect against future damage.</p>
-            </div>
-          </li>
-        </ul>
+        {% content_for 'blocks' %}
+        
       </div>
       <div data-tab="2" class="tab">
         Your lungs didn’t get congested overnight—and real healing takes time.
@@ -106,7 +77,7 @@
 
     </div>
   </div>
-  {% content_for 'blocks' %}
+
 
 </div>
 <script>
@@ -114,7 +85,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
   const buttons = tabsBlock.querySelectorAll(".tabs-header .head-btn");
   const tabs = tabsBlock.querySelectorAll(".tabs-body .tab");
-  buttons.forEach(btn => {addEventListener('click', openTab)});
+  buttons.forEach(btn => btn.addEventListener('click', openTab));
   console.log(buttons);
 
   function openTab(e){

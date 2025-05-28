@@ -1,0 +1,56 @@
+<div>
+  <h2>What Happens After You Clear Stuck Mucus with RespiClear</h2>
+  
+  {% if block.settings.title != blank %}
+  <h2>{{ block.settings.title }}</h2>
+  {% endif %}
+
+  <ul>
+    <li>
+      🔋 
+      <div>
+        <h4>Breathe Easier Fast</h4>
+        <p>Loosens and flushes thick, stuck mucus from your lungs in 4 days.</p>
+      </div>
+    </li>
+    <li>
+      💨 
+      <div>
+        <h4>Restore Full Oxygen Intake</h4>
+        <p>Raises O2 levels above 95% and keeps them there.</p>
+      </div>
+    </li>
+    <li>
+      ⚡ 
+      <div>
+        <h4>Boost Energy and Sleep</h4>
+        <p>More oxygen = better sleep, more stamina, better mood.</p>
+      </div>
+    </li>
+    <li>
+      🛡️ 
+      <div>
+        <h4>Protect Lung Health Long-Term</h4>
+        <p>Flush out Black Carbon and protect against future damage.</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "Benefits",
+  "tag": null,
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title",
+    },
+
+  ],
+  "presets": [
+    { "name": "Benefits" }
+  ]
+}
+{% endschema %}
