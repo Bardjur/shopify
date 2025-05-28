@@ -49,33 +49,10 @@
   <div class="tabs">
     <div class="tabs-header">
       {% content_for 'block', type:"_tab_nav", id:"tab_order" %}
-
-      <button type="button" class="head-btn active" data-button="1">Benefits</button>
-      <button type="button" class="head-btn " data-button="2">180 Day Breathe Easy Guarantee</button>
-      <button type="button" class="head-btn " data-button="3">Reviews</button>
     </div>
 
     <div class="tabs-body">
       {% content_for 'blocks' %}
-      <div data-tab="1" class="tab active">
-      </div>
-      <div data-tab="2" class="tab">
-        Your lungs didn’t get congested overnight—and real healing takes time.
-        That’s why RespiClear works best with consistent daily use.
-        But if, after giving it a fair shot, you don’t feel deeper, clearer breathing?
-        You’ll get every penny back. No fine print. No risk. Just relief.
-      </div>
-      <div data-tab="3" class="tab">
-        <div>
-          <div>⭐⭐⭐⭐⭐</div>
-          <h4>“I didn’t realize how badly I needed this.”</h4>
-        </div>
-        <div>
-          <p>I used to think the tightness in my chest and the constant morning coughing was just “getting older.” But after a week on RespiClear, my lungs felt open again. By day 4 I could actually take a full breath without feeling clogged up. It’s now part of my morning routine and I’ll never go without it again.</p>
-          <p>– Angela T., 48</p>
-        </div>
-      </div>
-
     </div>
   </div>
 
@@ -112,7 +89,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     "name": "Tabs",
     "tag":"section",
     "class": "section",
-    "blocks": [{"type": "_tab_nav"}, {"type": "_tab_content"},{"type": "benefits"}],
+    "blocks": [{"type": "_tab_nav"}, {"type": "_tab_content"}],
     "settings": [
       {
         "type": "text",
