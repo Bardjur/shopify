@@ -1,0 +1,33 @@
+<div class="text-block text-{{ block.settings.alignment }}">
+  <p>
+    {{ block.settings.text }}
+  </p>
+</div>
+
+{% schema %}
+{
+  "name": "test",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Welcome to our store</p>",
+    },
+    {
+      "type": "text_alignment",
+      "id": "alignment",
+      "label": "Alignment"
+    },
+  ],
+  "presets": [
+    { "name": "Text" },
+    {
+      "name": "Content",
+      "settings": {
+        "text": "<p>Hello, world!</p>"
+      }
+    }
+  ]
+}
+{% endschema %}
