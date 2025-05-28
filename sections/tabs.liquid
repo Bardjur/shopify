@@ -1,10 +1,37 @@
 {%- style -%}
   .section-{{ section.id }} {
-
+    background: #e7e3cc;
   }
-
-  .tabs button.active{
-    background: green;
+  .tabs{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .tabs-header {
+    margin-bottom:10px;
+  }
+  .tabs .head-btn {
+    border-radius: 10px;
+    border: none;
+    padding: 12px 0px;
+    width: 100%;
+    background: rgba(52, 50, 15, 0.1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #34320f;
+  }
+  .tabs .head-btn:not(:last-child){
+    margin-bottom:5px;
+  }
+  .tabs .head-btn.active{
+    color: #f1eeda;
+    background: #34320f;
+  }
+  .tabs-body{
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
   }
   .tabs .tab{
     display:none;
@@ -20,16 +47,62 @@
     <h2>{{ section.settings.header }}</h2>
   {%- endif -%}
   <div class="tabs">
-    <div class="header">
-      <button type="button" class="active" data-button="1">slide1</button>
-      <button type="button" data-button="2">slide2</button>
-      <button type="button" data-button="3">slide3</button>
+    <div class="tabs-header">
+      <button type="button" class="head-btn active" data-button="1">Benefits</button>
+      <button type="button" class="head-btn " data-button="2">180 Day Breathe Easy Guarantee</button>
+      <button type="button" class="head-btn " data-button="3">Reviews</button>
     </div>
 
-    <div class="body">
-      <div data-tab="1" class="tab active">slide1</div>
-      <div data-tab="2" class="tab">slide2</div>
-      <div data-tab="3" class="tab">slide3</div>
+    <div class="tabs-body">
+      <div data-tab="1" class="tab active">
+        <h2>What Happens After You Clear Stuck Mucus with RespiClear</h2>
+        <ul>
+          <li>
+            🔋 
+            <div>
+              <h4>Breathe Easier Fast</h4>
+              <p>Loosens and flushes thick, stuck mucus from your lungs in 4 days.</p>
+            </div>
+          </li>
+          <li>
+            💨 
+            <div>
+              <h4>Restore Full Oxygen Intake</h4>
+              <p>Raises O2 levels above 95% and keeps them there.</p>
+            </div>
+          </li>
+          <li>
+            ⚡ 
+            <div>
+              <h4>Boost Energy and Sleep</h4>
+              <p>More oxygen = better sleep, more stamina, better mood.</p>
+            </div>
+          </li>
+          <li>
+            🛡️ 
+            <div>
+              <h4>Protect Lung Health Long-Term</h4>
+              <p>Flush out Black Carbon and protect against future damage.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div data-tab="2" class="tab">
+        Your lungs didn’t get congested overnight—and real healing takes time.
+        That’s why RespiClear works best with consistent daily use.
+        But if, after giving it a fair shot, you don’t feel deeper, clearer breathing?
+        You’ll get every penny back. No fine print. No risk. Just relief.
+      </div>
+      <div data-tab="3" class="tab">
+        <div>
+          <div>⭐⭐⭐⭐⭐</div>
+          <h4>“I didn’t realize how badly I needed this.”</h4>
+        </div>
+        <div>
+          <p>I used to think the tightness in my chest and the constant morning coughing was just “getting older.” But after a week on RespiClear, my lungs felt open again. By day 4 I could actually take a full breath without feeling clogged up. It’s now part of my morning routine and I’ll never go without it again.</p>
+          <p>– Angela T., 48</p>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -38,8 +111,8 @@
 <script>
 document.addEventListener("DOMContentLoaded", (event) => {
   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
-  const buttons = tabsBlock.querySelectorAll(".header button");
-  const tabs = tabsBlock.querySelectorAll(".body .tab");
+  const buttons = tabsBlock.querySelectorAll(".tabs-header button");
+  const tabs = tabsBlock.querySelectorAll(".tabs-body .tab");
   buttons.forEach(btn => addEventListener('click', openTab));
 
   function openTab(e){
