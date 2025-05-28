@@ -1,0 +1,30 @@
+<button 
+  type="button" 
+  class="head-btn tab-nav-btn" 
+  data-order="{{ block.settings.tab_order }}"
+  data-tab="tab-{{ block.id }}"
+>
+  {{ block.settings.tab_title }}
+</button>
+
+{% schema %}
+{
+  "name": "Tab button",
+  "tag": null,
+  "settings": [
+    {
+      "type": "number",
+      "id": "tab_order",
+      "label": "Number (same in content!)"
+    },
+    {
+      "type": "text",
+      "id": "tab_title",
+      "label": "Title",
+    }
+  ],
+  "presets": [{
+    "name": "Tab button"
+  }]
+}
+{% endschema %}

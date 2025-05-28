@@ -56,8 +56,8 @@
     </div>
 
     <div class="tabs-body">
+      {% content_for 'blocks' %}
       <div data-tab="1" class="tab active">
-        {% content_for 'blocks' %}
       </div>
       <div data-tab="2" class="tab">
         Your lungs didn’t get congested overnight—and real healing takes time.
@@ -127,14 +127,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
           "type":"_tab_nav",
           "settings": {
             "tab_order": 0,
-            "title": "enter uniqe order!!!"
+            "tab_title": "enter uniqe order!!!"
           }
         },
         {
           "type":"_tab_content",
           "settings": {
-            "tab_order": 0,
-            "title": "enter uniqe order!!!"
+            "tab_order": 0
           }
         },
       ]
