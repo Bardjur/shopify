@@ -14,19 +14,60 @@
       "blocks": {
         "benefits_rRBBhq": {
           "type": "benefits",
-          "name": "Benefits",
           "settings": {
-            "title": "<p>What Happens After You Clear Stuck Mucus with RespiClear</p>"
+            "title": "What Happens After You Clear Stuck Mucus with RespiClear"
           },
-          "blocks": {}
+          "blocks": {
+            "benefits_list_item_D9PtPJ": {
+              "type": "_benefits_list_item",
+              "name": "List item",
+              "settings": {
+                "subtitle": "Breathe Easier Fast",
+                "text": "<p>Loosens and flushes thick, stuck mucus from your lungs in 4 days.</p>"
+              },
+              "blocks": {}
+            },
+            "benefits_list_item_FGDT7z": {
+              "type": "_benefits_list_item",
+              "name": "List item",
+              "settings": {
+                "subtitle": "Restore Full Oxygen Intake",
+                "text": "<p>Raises O2 levels above 95% and keeps them there.</p>"
+              },
+              "blocks": {}
+            },
+            "benefits_list_item_ApNQGy": {
+              "type": "_benefits_list_item",
+              "name": "List item",
+              "settings": {
+                "subtitle": "Boost Energy and Sleep",
+                "text": "<p>More oxygen = better sleep, more stamina, better mood.</p>"
+              },
+              "blocks": {}
+            },
+            "benefits_list_item_R7T7zb": {
+              "type": "_benefits_list_item",
+              "name": "List item",
+              "settings": {
+                "subtitle": "Protect Lung Health Long-Term",
+                "text": "<p>Flush out Black Carbon and protect against future damage.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "benefits_list_item_D9PtPJ",
+            "benefits_list_item_FGDT7z",
+            "benefits_list_item_ApNQGy",
+            "benefits_list_item_R7T7zb"
+          ]
         }
       },
       "block_order": [
         "benefits_rRBBhq"
       ],
       "settings": {
-        "header": "",
-        "title": ""
+        "header": ""
       }
     }
   },
