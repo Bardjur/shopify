@@ -49,11 +49,11 @@
 
   <div class="tabs">
     <div class="tabs-nav">
-      {% content_for 'block', type:"_tab_nav", id:"tab_order" %}
+      {% content_for 'block', type:"_tab_nav", id:"nav-1" %}
     </div>
 
     <div class="tabs-body">
-      {% content_for 'blocks' %}
+      {% content_for 'block', type:"_tab_content", id:"content-1" %}
     </div>
   </div>
 

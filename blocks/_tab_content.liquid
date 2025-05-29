@@ -14,7 +14,8 @@
     {
       "type": "number",
       "id": "tab_order",
-      "label": "Number (same in content!)"
+      "label": "Number (same in content!)",
+      "default": 0
     }
   ],
   "blocks": [{"type": "benefits"}],
@@ -23,9 +24,15 @@
     "blocks": [
       {
         "type":"benefits",
-        "settings": {
-          "title":"dgdfggdff"
-        }
+        "blocks": [
+          {
+            "type":"_benefits_list_item",
+            "settings": {
+              "subtitle": "Subtitle.",
+              "text": "<p>loream...<p>"
+            }
+          }
+        ]
       }
     ]
   }]
