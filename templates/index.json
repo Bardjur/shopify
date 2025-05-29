@@ -42,6 +42,7 @@
         "text_YMaJmR",
         "button_t8TngQ"
       ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -50,54 +51,9 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "tabs_qjA7tp": {
-      "type": "tabs",
-      "blocks": {
-        "tab_content_r7MAy3": {
-          "type": "_tab_content",
-          "settings": {
-            "tab_order": 1,
-            "nav_caption": "tab"
-          },
-          "blocks": {
-            "benefits_cfxcUY": {
-              "type": "benefits",
-              "name": "Benefits",
-              "settings": {
-                "title": ""
-              },
-              "blocks": {
-                "benefits_list_item_PR73Pi": {
-                  "type": "_benefits_list_item",
-                  "settings": {
-                    "subtitle": "Subtitle.",
-                    "text": "<p>loream...<p>"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "benefits_list_item_PR73Pi"
-              ]
-            }
-          },
-          "block_order": [
-            "benefits_cfxcUY"
-          ]
-        }
-      },
-      "block_order": [
-        "tab_content_r7MAy3"
-      ],
-      "name": "Tabs",
-      "settings": {
-        "header": ""
-      }
     }
   },
   "order": [
-    "rich_text_XqrF3N",
-    "tabs_qjA7tp"
+    "rich_text_XqrF3N"
   ]
 }

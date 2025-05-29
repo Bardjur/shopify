@@ -49,7 +49,9 @@
 
   <div class="tabs">
     <div class="tabs-nav">
-      {% for block in section.blocks %}
+      {% assign my_variable = section.blocks %}
+      {% for block in my_variable %}
+
         <button 
           type="button" 
           class="tab-nav-btn"
