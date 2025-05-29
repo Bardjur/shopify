@@ -104,7 +104,7 @@
                   "type": "_benefits_list_item",
                   "settings": {
                     "subtitle": "Subtitle.",
-                    "text": "<p>loream...<p>"
+                    "text": "<p>loream.</p>"
                   },
                   "blocks": {}
                 }
