@@ -85,10 +85,43 @@
           "block_order": [
             "benefits_fLiBpG"
           ]
+        },
+        "tab_content_faAfmY": {
+          "type": "_tab_content",
+          "name": "Tab content",
+          "settings": {
+            "tab_order": 0,
+            "nav_caption": "tab1"
+          },
+          "blocks": {
+            "benefits_j3Q8eT": {
+              "type": "benefits",
+              "settings": {
+                "title": ""
+              },
+              "blocks": {
+                "benefits_list_item_frWkF7": {
+                  "type": "_benefits_list_item",
+                  "settings": {
+                    "subtitle": "Subtitle.",
+                    "text": "<p>loream...<p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "benefits_list_item_frWkF7"
+              ]
+            }
+          },
+          "block_order": [
+            "benefits_j3Q8eT"
+          ]
         }
       },
       "block_order": [
-        "tab_content_MwCegc"
+        "tab_content_MwCegc",
+        "tab_content_faAfmY"
       ],
       "name": "Tabs",
       "settings": {
