@@ -64,8 +64,8 @@
               "type": "text",
               "name": "Text content",
               "settings": {
-                "title": "",
-                "text": ""
+                "title": "fghfgfg",
+                "text": "<p>fghgfhgfh</p>"
               },
               "blocks": {}
             }
