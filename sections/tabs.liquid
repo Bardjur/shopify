@@ -34,7 +34,7 @@
     background: rgba(255, 255, 255, 0.6);
   }
   .tabs .tab{
-    /*display:none;*/
+    display:none;
   }
   .tabs .tab.active{
     display:block;
@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   } 
+  if (buttons.length) buttons[0].click();
 });
 </script>
 
