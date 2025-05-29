@@ -42,7 +42,6 @@
         "text_YMaJmR",
         "button_t8TngQ"
       ],
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -51,9 +50,30 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "tabs_tnLDYW": {
+      "type": "tabs",
+      "blocks": {
+        "tab_content_NmGVD9": {
+          "type": "_tab_content",
+          "settings": {
+            "tab_order": 1,
+            "nav_caption": "tab"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "tab_content_NmGVD9"
+      ],
+      "name": "Tabs",
+      "settings": {
+        "header": ""
+      }
     }
   },
   "order": [
-    "rich_text_XqrF3N"
+    "rich_text_XqrF3N",
+    "tabs_tnLDYW"
   ]
 }
