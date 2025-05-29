@@ -49,21 +49,22 @@
 
   <div class="tabs">
     <div class="tabs-nav">
-      {% assign my_variable = section.blocks %}
       
-        {% for block in my_variable %}
-{%- if block != empty and block != blank -%}
+      
+        {% for block in section.blocks %}
+          
+          {% assign my_variable = block.settings.nav_caption %}
+
           <button 
             type="button" 
             class="tab-nav-btn"
             data-tab="tab-{{ block.id }}"
           >
-            {{ block.settings.nav_caption }}
+            {{ my_variable }}
           </button>
           <script>
-          console.log(block | json)
+
           </script>
-        {%- endif -%}
         {% endfor %}
 
 
