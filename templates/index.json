@@ -85,10 +85,76 @@
           "block_order": [
             "benefits_TcNJbT"
           ]
+        },
+        "tab_content_JwMpWm": {
+          "type": "_tab_content",
+          "name": "Tab content",
+          "settings": {
+            "tab_order": 0,
+            "nav_caption": "tab"
+          },
+          "blocks": {
+            "benefits_grAghC": {
+              "type": "benefits",
+              "settings": {
+                "title": ""
+              },
+              "blocks": {
+                "benefits_list_item_Lygrje": {
+                  "type": "_benefits_list_item",
+                  "settings": {
+                    "subtitle": "Subtitle.",
+                    "text": "<p>loream...<p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "benefits_list_item_Lygrje"
+              ]
+            }
+          },
+          "block_order": [
+            "benefits_grAghC"
+          ]
+        },
+        "tab_content_38xzbc": {
+          "type": "_tab_content",
+          "name": "Tab content",
+          "settings": {
+            "tab_order": 0,
+            "nav_caption": "tab"
+          },
+          "blocks": {
+            "benefits_yWDYh3": {
+              "type": "benefits",
+              "settings": {
+                "title": ""
+              },
+              "blocks": {
+                "benefits_list_item_dEqcWc": {
+                  "type": "_benefits_list_item",
+                  "settings": {
+                    "subtitle": "Subtitle.",
+                    "text": "<p>loream...<p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "benefits_list_item_dEqcWc"
+              ]
+            }
+          },
+          "block_order": [
+            "benefits_yWDYh3"
+          ]
         }
       },
       "block_order": [
-        "tab_content_LwyPB6"
+        "tab_content_LwyPB6",
+        "tab_content_JwMpWm",
+        "tab_content_38xzbc"
       ],
       "name": "Tabs",
       "settings": {
