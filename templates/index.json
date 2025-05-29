@@ -42,6 +42,7 @@
         "text_YMaJmR",
         "button_t8TngQ"
       ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -50,96 +51,9 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "tabs_Gy3VFX": {
-      "type": "tabs",
-      "blocks": {
-        "tab_nav_nUMntN": {
-          "type": "_tab_nav",
-          "settings": {
-            "tab_order": 1,
-            "tab_title": "Tab 1"
-          },
-          "blocks": {}
-        },
-        "tab_content_dPfpfL": {
-          "type": "_tab_content",
-          "settings": {
-            "tab_order": 1
-          },
-          "blocks": {}
-        },
-        "tab_nav_piWQip": {
-          "type": "_tab_nav",
-          "settings": {
-            "tab_order": 2,
-            "tab_title": "Tab 2"
-          },
-          "blocks": {}
-        },
-        "tab_content_qmnNGH": {
-          "type": "_tab_content",
-          "settings": {
-            "tab_order": 2
-          },
-          "blocks": {}
-        },
-        "nav-1": {
-          "type": "_tab_nav",
-          "static": true,
-          "settings": {
-            "tab_order": 0,
-            "tab_title": "Tab"
-          },
-          "blocks": {}
-        },
-        "content-1": {
-          "type": "_tab_content",
-          "static": true,
-          "settings": {
-            "tab_order": 0
-          },
-          "blocks": {
-            "benefits_xQYgDW": {
-              "type": "benefits",
-              "name": "Benefits",
-              "settings": {
-                "title": ""
-              },
-              "blocks": {
-                "benefits_list_item_W89Jkg": {
-                  "type": "_benefits_list_item",
-                  "settings": {
-                    "subtitle": "Subtitle.",
-                    "text": "<p>loream...<p>"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "benefits_list_item_W89Jkg"
-              ]
-            }
-          },
-          "block_order": [
-            "benefits_xQYgDW"
-          ]
-        }
-      },
-      "block_order": [
-        "tab_nav_nUMntN",
-        "tab_content_dPfpfL",
-        "tab_nav_piWQip",
-        "tab_content_qmnNGH"
-      ],
-      "name": "Tabs",
-      "settings": {
-        "header": ""
-      }
     }
   },
   "order": [
-    "rich_text_XqrF3N",
-    "tabs_Gy3VFX"
+    "rich_text_XqrF3N"
   ]
 }
