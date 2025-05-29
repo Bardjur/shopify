@@ -1,0 +1,51 @@
+<div>
+  <details
+    id="details-{{ block.id }}"
+  >
+    <summary id="Summary-{{ block.id }}-{{ section.id }}">
+      {% render 'icon-accordion', icon: block.settings.icon %}
+      <h3 class="accordion__title inline-richtext h4">
+        {{ block.settings.heading }}
+      </h3>
+      {{- 'icon-caret.svg' | inline_asset_content -}}
+    </summary>
+    <div
+      class="accordion__content rte"
+      id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+      role="region"
+      aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+    >
+      {{ block.settings.text }}
+    </div>
+  </details>
+</div>
+
+{% schema %}
+{
+  "name": "Collapsible item",
+  "tag":null,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "badge",
+      "label": "Badge"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
+  "presets":[
+    {
+      "name": "List item",
+    }
+  ]
+}
+{% endschema %}
