@@ -50,9 +50,9 @@
   <div class="tabs">
     <div class="tabs-nav">
       {% assign my_variable = section.blocks %}
-      {%- if my_variable != empty -%}
+      
         {% for block in my_variable %}
-
+{%- if block != empty -%}
           <button 
             type="button" 
             class="tab-nav-btn"
@@ -63,8 +63,9 @@
           <script>
           console.log(block | json)
           </script>
+        {%- endif -%}
         {% endfor %}
-      {%- endif -%}
+
 
       <button 
         type="button" 
