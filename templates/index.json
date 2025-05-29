@@ -79,10 +79,31 @@
               "block_order": [
                 "benefits_list_item_TD9xmW"
               ]
+            },
+            "collapsible_H8fPBG": {
+              "type": "collapsible",
+              "name": "Collapsible content",
+              "settings": {
+                "title": "443у4уекуеук"
+              },
+              "blocks": {
+                "collapsible_item_4NWt84": {
+                  "type": "_collapsible_item",
+                  "settings": {
+                    "heading": "Heading...",
+                    "text": "<p>Text...<p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "collapsible_item_4NWt84"
+              ]
             }
           },
           "block_order": [
-            "benefits_JJdCnq"
+            "benefits_JJdCnq",
+            "collapsible_H8fPBG"
           ]
         }
       },
