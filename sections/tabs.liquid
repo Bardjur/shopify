@@ -50,7 +50,7 @@
   <div class="tabs">
     <div class="tabs-nav">
       {% assign my_variable = section.blocks %}
-      {%- if my_variable != blank -%}
+      {%- if my_variable != empty -%}
         {% for block in my_variable %}
 
           <button 
@@ -109,10 +109,6 @@ console.log(buttons);
   tabs.forEach(tab => {
 
   })
-
-
-
-  console.log({{ section.blocks[0] | json }})
 
 });
 </script>
