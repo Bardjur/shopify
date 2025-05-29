@@ -1,6 +1,5 @@
 <div
   class="tab"
-  data-order="{{ block.settings.tab_order }}"
   data-tab="tab-{{ block.id }}"
   data-caption="{{ block.settings.nav_caption }}"
 >
@@ -13,16 +12,10 @@
   "tag": null,
   "settings": [
     {
-      "type": "number",
-      "id": "tab_order",
-      "label": "Number (same in content!)",
-      "default": 0
-    },
-    {
       "type": "text",
       "id": "nav_caption",
       "label": "Nav caption",
-      "default": "tab"
+      "default": "Tab"
     }
   ],
   "blocks": [{"type": "benefits"}],
@@ -30,16 +23,7 @@
     "name": "Tab content",
     "blocks": [
       {
-        "type":"benefits",
-        "blocks": [
-          {
-            "type":"_benefits_list_item",
-            "settings": {
-              "subtitle": "Subtitle.",
-              "text": "<p>loream...<p>"
-            }
-          }
-        ]
+        "type":"benefits"
       }
     ]
   }]
