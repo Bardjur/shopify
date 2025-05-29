@@ -61,15 +61,6 @@
 
           </script>
         {% endfor %}
-
-
-      <button 
-        type="button" 
-        class="tab-nav-btn" 
-        data-order="1"
-      >
-        TAB
-      </button>
     </div>
 
     <div class="tabs-body">
@@ -87,7 +78,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   buttons.forEach(btn => btn.addEventListener('click', openTab));
 
   tabs.forEach(tab => {
-    tabsBlock.querySelector(`[data-tab=tab-${tab.dataset.tab}]`).textContent = tab.dataset.caption;
+    consoloe.log(`[data-tab="tab-${tab.dataset.tab}]"`);
+    tabsBlock.querySelector(`[data-tab="tab-${tab.dataset.tab}"]`).textContent = tab.dataset.caption;
   })
 
   function openTab(){
