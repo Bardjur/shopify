@@ -2,7 +2,6 @@
   type="button" 
   class="tab-nav-btn" 
   data-order="{{ block.settings.tab_order }}"
-  data-tab="tab-{{ block.id }}"
 >
   {{ block.settings.tab_title }}
 </button>
@@ -15,7 +14,8 @@
     {
       "type": "number",
       "id": "tab_order",
-      "label": "Number (same in content!)"
+      "label": "Number (same in content!)",
+      "default": 0
     },
     {
       "type": "text",

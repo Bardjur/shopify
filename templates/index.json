@@ -42,6 +42,7 @@
         "text_YMaJmR",
         "button_t8TngQ"
       ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -50,120 +51,9 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "tabs_zTjV4t": {
-      "type": "tabs",
-      "blocks": {
-        "tab_nav_KQLaC6": {
-          "type": "_tab_nav",
-          "settings": {
-            "tab_order": 1,
-            "tab_title": "Tab 1"
-          },
-          "blocks": {}
-        },
-        "tab_content_qRWwpd": {
-          "type": "_tab_content",
-          "settings": {
-            "tab_order": 1
-          },
-          "blocks": {
-            "benefits_N68eDg": {
-              "type": "benefits",
-              "name": "Benefits",
-              "settings": {
-                "title": ""
-              },
-              "blocks": {
-                "benefits_list_item_gK4qTf": {
-                  "type": "_benefits_list_item",
-                  "settings": {
-                    "subtitle": "Subtitle.",
-                    "text": "<p>loream...<p>"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "benefits_list_item_gK4qTf"
-              ]
-            }
-          },
-          "block_order": [
-            "benefits_N68eDg"
-          ]
-        },
-        "tab_nav_YUCHRh": {
-          "type": "_tab_nav",
-          "settings": {
-            "tab_order": 2,
-            "tab_title": "Tab 2"
-          },
-          "blocks": {}
-        },
-        "tab_content_48qJ4x": {
-          "type": "_tab_content",
-          "settings": {
-            "tab_order": 2
-          },
-          "blocks": {}
-        },
-        "nav-1": {
-          "type": "_tab_nav",
-          "static": true,
-          "settings": {
-            "tab_order": 0,
-            "tab_title": "fdfdggfd"
-          },
-          "blocks": {}
-        },
-        "content-1": {
-          "type": "_tab_content",
-          "static": true,
-          "settings": {
-            "tab_order": 0
-          },
-          "blocks": {
-            "benefits_jR3FXH": {
-              "type": "benefits",
-              "name": "Benefits",
-              "settings": {
-                "title": ""
-              },
-              "blocks": {
-                "benefits_list_item_fnqGFh": {
-                  "type": "_benefits_list_item",
-                  "settings": {
-                    "subtitle": "Subtitle.",
-                    "text": "<p>loream...</p><p></p>"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "benefits_list_item_fnqGFh"
-              ]
-            }
-          },
-          "block_order": [
-            "benefits_jR3FXH"
-          ]
-        }
-      },
-      "block_order": [
-        "tab_nav_KQLaC6",
-        "tab_content_qRWwpd",
-        "tab_nav_YUCHRh",
-        "tab_content_48qJ4x"
-      ],
-      "name": "Tabs",
-      "settings": {
-        "header": ""
-      }
     }
   },
   "order": [
-    "rich_text_XqrF3N",
-    "tabs_zTjV4t"
+    "rich_text_XqrF3N"
   ]
 }
