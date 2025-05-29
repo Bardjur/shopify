@@ -81,7 +81,7 @@
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", (event) => {
-{% comment %}   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
+   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
   const buttons = tabsBlock.querySelectorAll(".tabs-nav .tab-nav-btn");
   const tabs = tabsBlock.querySelectorAll(".tabs-body .tab");
   buttons.forEach(btn => btn.addEventListener('click', openTab));
@@ -101,7 +101,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         elem.classList.remove('active')
       }
     });
-  } {% endcomment %}
+  } 
+console.log(buttons);
+  tabs.forEach(tab => {
+
+  })
+
+
 
   console.log({{ section.blocks[0] | json }})
 
