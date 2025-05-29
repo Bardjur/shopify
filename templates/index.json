@@ -42,7 +42,6 @@
         "text_YMaJmR",
         "button_t8TngQ"
       ],
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -51,9 +50,108 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "tabs_gWymJz": {
+      "type": "tabs",
+      "blocks": {
+        "tab_content_tQYAzP": {
+          "type": "_tab_content",
+          "settings": {
+            "nav_caption": "Tab"
+          },
+          "blocks": {
+            "text_HgT8Wz": {
+              "type": "text",
+              "name": "Text content",
+              "settings": {
+                "title": "",
+                "text": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_HgT8Wz"
+          ]
+        },
+        "tab_content_KBjPnY": {
+          "type": "_tab_content",
+          "name": "Tab content",
+          "settings": {
+            "nav_caption": "Tab"
+          },
+          "blocks": {
+            "benefits_zEaWwC": {
+              "type": "benefits",
+              "name": "Benefits",
+              "settings": {
+                "title": ""
+              },
+              "blocks": {
+                "benefits_list_item_9gJW4w": {
+                  "type": "_benefits_list_item",
+                  "settings": {
+                    "subtitle": "Subtitle...",
+                    "text": "<p>Text...<p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "benefits_list_item_9gJW4w"
+              ]
+            }
+          },
+          "block_order": [
+            "benefits_zEaWwC"
+          ]
+        },
+        "tab_content_xi6GwM": {
+          "type": "_tab_content",
+          "name": "Tab content",
+          "settings": {
+            "nav_caption": "Tab"
+          },
+          "blocks": {
+            "collapsible_3BLcm9": {
+              "type": "collapsible",
+              "name": "Collapsible content",
+              "settings": {
+                "title": ""
+              },
+              "blocks": {
+                "collapsible_item_dC77K6": {
+                  "type": "_collapsible_item",
+                  "settings": {
+                    "heading": "Heading...",
+                    "text": "<p>Text...<p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "collapsible_item_dC77K6"
+              ]
+            }
+          },
+          "block_order": [
+            "collapsible_3BLcm9"
+          ]
+        }
+      },
+      "block_order": [
+        "tab_content_tQYAzP",
+        "tab_content_KBjPnY",
+        "tab_content_xi6GwM"
+      ],
+      "name": "Tabs",
+      "settings": {
+        "header": ""
+      }
     }
   },
   "order": [
-    "rich_text_XqrF3N"
+    "rich_text_XqrF3N",
+    "tabs_gWymJz"
   ]
 }
