@@ -79,36 +79,48 @@
               "block_order": [
                 "benefits_list_item_TD9xmW"
               ]
-            },
-            "collapsible_H8fPBG": {
+            }
+          },
+          "block_order": [
+            "benefits_JJdCnq"
+          ]
+        },
+        "tab_content_N66Lby": {
+          "type": "_tab_content",
+          "name": "Tab content",
+          "settings": {
+            "nav_caption": "Tab"
+          },
+          "blocks": {
+            "collapsible_bBPbtR": {
               "type": "collapsible",
               "name": "Collapsible content",
               "settings": {
-                "title": "443у4уекуеук"
+                "title": "уккуук"
               },
               "blocks": {
-                "collapsible_item_4NWt84": {
+                "collapsible_item_7nx9Yt": {
                   "type": "_collapsible_item",
                   "settings": {
                     "heading": "Heading...",
-                    "text": "<p>Text...<p>"
+                    "text": "<p>Text...</p><p>укукукукукук</p>"
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "collapsible_item_4NWt84"
+                "collapsible_item_7nx9Yt"
               ]
             }
           },
           "block_order": [
-            "benefits_JJdCnq",
-            "collapsible_H8fPBG"
+            "collapsible_bBPbtR"
           ]
         }
       },
       "block_order": [
-        "tab_content_bLNji3"
+        "tab_content_bLNji3",
+        "tab_content_N66Lby"
       ],
       "name": "Tabs",
       "settings": {
