@@ -9,101 +9,51 @@
  */
 {
   "sections": {
-    "tabs_UnYywb": {
-      "type": "tabs",
+    "rich_text_XqrF3N": {
+      "type": "rich-text",
       "blocks": {
-        "tab_content_mk3Whf": {
-          "type": "_tab_content",
+        "heading_eRXX8H": {
+          "type": "heading",
           "settings": {
-            "tab_order": 1
-          },
-          "blocks": {
-            "benefits_QDpKFt": {
-              "type": "benefits",
-              "name": "Benefits",
-              "settings": {
-                "title": ""
-              },
-              "blocks": {
-                "benefits_list_item_Nr9DFy": {
-                  "type": "_benefits_list_item",
-                  "settings": {
-                    "subtitle": "Subtitle.",
-                    "text": "<p>loream...</p><p></p>"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "benefits_list_item_Nr9DFy"
-              ]
-            }
-          },
-          "block_order": [
-            "benefits_QDpKFt"
-          ]
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
         },
-        "tab_nav_8GEWX6": {
-          "type": "_tab_nav",
+        "text_YMaJmR": {
+          "type": "text",
           "settings": {
-            "tab_order": 2,
-            "tab_title": "Tab 2"
-          },
-          "blocks": {}
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
         },
-        "tab_content_AHMbCx": {
-          "type": "_tab_content",
+        "button_t8TngQ": {
+          "type": "button",
           "settings": {
-            "tab_order": 2
-          },
-          "blocks": {
-            "benefits_7ieg6C": {
-              "type": "benefits",
-              "name": "Benefits",
-              "settings": {
-                "title": "fdggfd"
-              },
-              "blocks": {
-                "benefits_list_item_dAYHg4": {
-                  "type": "_benefits_list_item",
-                  "settings": {
-                    "subtitle": "Subtitle.",
-                    "text": "<p>loream...<p>"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "benefits_list_item_dAYHg4"
-              ]
-            }
-          },
-          "block_order": [
-            "benefits_7ieg6C"
-          ]
-        },
-        "tab_order": {
-          "type": "_tab_nav",
-          "static": true,
-          "settings": {
-            "tab_order": 1,
-            "tab_title": "hghgghh"
-          },
-          "blocks": {}
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
-        "tab_content_mk3Whf",
-        "tab_nav_8GEWX6",
-        "tab_content_AHMbCx"
+        "heading_eRXX8H",
+        "text_YMaJmR",
+        "button_t8TngQ"
       ],
-      "name": "Tabs",
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "header": ""
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "tabs_UnYywb"
+    "rich_text_XqrF3N"
   ]
 }
