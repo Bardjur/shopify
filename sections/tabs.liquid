@@ -49,32 +49,7 @@
 
   <div class="tabs">
     <div class="tabs-nav">
-      
-      
-        {% for block in section.blocks %}
-          
-          {% assign my_variable = block.settings.nav_caption %}
 
-          <button 
-            type="button" 
-            class="tab-nav-btn"
-            data-tab="tab-{{ block.id }}"
-          >
-            {{ my_variable }}
-          </button>
-          <script>
-
-          </script>
-        {% endfor %}
-
-
-      <button 
-        type="button" 
-        class="tab-nav-btn" 
-        data-order="1"
-      >
-        TAB
-      </button>
     </div>
 
     <div class="tabs-body">
@@ -87,8 +62,39 @@
 <script>
 document.addEventListener("DOMContentLoaded", (event) => {
    const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
-  const buttons = tabsBlock.querySelectorAll(".tabs-nav .tab-nav-btn");
+  
+  const nav = tabsBlock.querySelector(".section-{{ section.id }} .tabs-nav");
   const tabs = tabsBlock.querySelectorAll(".tabs-body .tab");
+
+  const navBtn = Array.from(tabs)
+      .map((pane) => {
+        return {
+          id: pane.id,
+          title: pane.dataset.caption || 'Tab',
+        };
+      })
+
+      navBtn.forEach((tab) => {
+      const btn = document.createElement('button');
+      btn.className = 'tab-nav-btn';
+      btn.textContent = tab.title;
+      btn.dataset.tab = tab.id;
+
+{% comment %}       btn.addEventListener('click', () => {
+        // hide all
+        tabPanes.forEach(pane => pane.style.display = 'none');
+        // show selected
+        document.getElementById(tab.id).style.display = 'block';
+
+        // update active tab
+        document.querySelectorAll('.tab-nav-btn').forEach(btn => btn.classList.remove('active'));
+        btn.classList.add('active');
+      }); {% endcomment %}
+
+      tabsNav.appendChild(btn);
+    });
+
+  const buttons = tabsBlock.querySelectorAll(".tabs-nav .tab-nav-btn");
   buttons.forEach(btn => btn.addEventListener('click', openTab));
 
   function openTab(){
