@@ -7,10 +7,10 @@
     border-radius: 10px;
     padding: 10px;
   }
-  .tabs-header {
+  .tabs-nav {
     margin-bottom:10px;
   }
-  .tabs .head-btn {
+  .tabs .tab-nav-btn {
     border-radius: 10px;
     border: none;
     padding: 12px 0px;
@@ -21,10 +21,10 @@
     line-height: 100%;
     color: #34320f;
   }
-  .tabs .head-btn:not(:last-child){
+  .tabs .tab-nav-btn:not(:last-child){
     margin-bottom:5px;
   }
-  .tabs .head-btn.active{
+  .tabs .tab-nav-btn.active{
     color: #f1eeda;
     background: #34320f;
   }
@@ -48,7 +48,7 @@
   {%- endif -%}
 
   <div class="tabs">
-    <div class="tabs-header">
+    <div class="tabs-nav">
       {% content_for 'block', type:"_tab_nav", id:"tab_order" %}
     </div>
 
@@ -62,26 +62,29 @@
 <script>
 document.addEventListener("DOMContentLoaded", (event) => {
   const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
-  const buttons = tabsBlock.querySelectorAll(".tabs-header .tab-nav-btn");
+  const buttons = tabsBlock.querySelectorAll(".tabs-nav .tab-nav-btn");
   const tabs = tabsBlock.querySelectorAll(".tabs-body .tab");
   buttons.forEach(btn => btn.addEventListener('click', openTab));
-  console.log(buttons);
 
   function openTab(e){
-    console.log(e);
-    changeClass(e.target.dataset.order, 'order', buttons);
-    changeClass(e.target.dataset.order, 'tab', tabs);
+    console.log('this= ');
+    console.log(this);
+    const activeTab = e.target.dataset.order;
+    changeClass(activeTab, buttons);
+    changeClass(activeTab, tabs);
   }
 
-  function changeClass(activeTab, nameElem, elems){
+  function changeClass(activeTab, elems){
     elems.forEach(elem => {
-      if( activeTab == elem.dataset[nameElem]){
+      if( activeTab == elem.dataset.tab){
         elem.classList.add('active')
       } else {
         elem.classList.remove('active')
       }
     });
   }
+
+  if (buttons.length) buttons[0].click();
 });
 </script>
 
