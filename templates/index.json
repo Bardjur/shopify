@@ -9,14 +9,101 @@
  */
 {
   "sections": {
-    "tabs": {
-      "type": "Tabs",
+    "tabs_UnYywb": {
+      "type": "tabs",
+      "blocks": {
+        "tab_content_mk3Whf": {
+          "type": "_tab_content",
+          "settings": {
+            "tab_order": 1
+          },
+          "blocks": {
+            "benefits_QDpKFt": {
+              "type": "benefits",
+              "name": "Benefits",
+              "settings": {
+                "title": ""
+              },
+              "blocks": {
+                "benefits_list_item_Nr9DFy": {
+                  "type": "_benefits_list_item",
+                  "settings": {
+                    "subtitle": "Subtitle.",
+                    "text": "<p>loream...</p><p></p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "benefits_list_item_Nr9DFy"
+              ]
+            }
+          },
+          "block_order": [
+            "benefits_QDpKFt"
+          ]
+        },
+        "tab_nav_8GEWX6": {
+          "type": "_tab_nav",
+          "settings": {
+            "tab_order": 2,
+            "tab_title": "Tab 2"
+          },
+          "blocks": {}
+        },
+        "tab_content_AHMbCx": {
+          "type": "_tab_content",
+          "settings": {
+            "tab_order": 2
+          },
+          "blocks": {
+            "benefits_7ieg6C": {
+              "type": "benefits",
+              "name": "Benefits",
+              "settings": {
+                "title": "fdggfd"
+              },
+              "blocks": {
+                "benefits_list_item_dAYHg4": {
+                  "type": "_benefits_list_item",
+                  "settings": {
+                    "subtitle": "Subtitle.",
+                    "text": "<p>loream...<p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "benefits_list_item_dAYHg4"
+              ]
+            }
+          },
+          "block_order": [
+            "benefits_7ieg6C"
+          ]
+        },
+        "tab_order": {
+          "type": "_tab_nav",
+          "static": true,
+          "settings": {
+            "tab_order": 1,
+            "tab_title": "hghgghh"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "tab_content_mk3Whf",
+        "tab_nav_8GEWX6",
+        "tab_content_AHMbCx"
+      ],
+      "name": "Tabs",
       "settings": {
         "header": ""
       }
     }
   },
   "order": [
-    "tabs"
+    "tabs_UnYywb"
   ]
 }
