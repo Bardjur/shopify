@@ -42,6 +42,7 @@
         "text_YMaJmR",
         "button_t8TngQ"
       ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -50,117 +51,9 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "tabs_hL3fPT": {
-      "type": "tabs",
-      "blocks": {
-        "tab_content_U69eJa": {
-          "type": "_tab_content",
-          "name": "Tab content",
-          "settings": {
-            "nav_caption": "Tab"
-          },
-          "blocks": {
-            "collapsible_gPmCC4": {
-              "type": "collapsible",
-              "name": "Collapsible content",
-              "settings": {
-                "title": ""
-              },
-              "blocks": {
-                "collapsible_item_gHWmbc": {
-                  "type": "_collapsible_item",
-                  "settings": {
-                    "heading": "Heading...",
-                    "text": "<p>Text...</p><p></p>"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "collapsible_item_gHWmbc"
-              ]
-            }
-          },
-          "block_order": [
-            "collapsible_gPmCC4"
-          ]
-        }
-      },
-      "block_order": [
-        "tab_content_U69eJa"
-      ],
-      "name": "Tabs",
-      "settings": {
-        "header": ""
-      }
-    },
-    "collapsible_content_NyTR78": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_mV8gPB": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_WKQwTe": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_ANymJ3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_WYEkGa": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_mV8gPB",
-        "collapsible_row_WKQwTe",
-        "collapsible_row_ANymJ3",
-        "collapsible_row_WYEkGa"
-      ],
-      "name": "t:sections.collapsible_content.presets.name",
-      "settings": {
-        "caption": "",
-        "heading": "Collapsible content",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "container_color_scheme": "",
-        "color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
-    "rich_text_XqrF3N",
-    "tabs_hL3fPT",
-    "collapsible_content_NyTR78"
+    "rich_text_XqrF3N"
   ]
 }
