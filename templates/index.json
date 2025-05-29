@@ -14,8 +14,9 @@
       "blocks": {
         "tab_content_YtQRke": {
           "type": "_tab_content",
-          "name": "Tab content",
-          "settings": {},
+          "settings": {
+            "tab_order": 0
+          },
           "blocks": {
             "benefits_MVFinr": {
               "type": "benefits",
@@ -25,7 +26,6 @@
               "blocks": {
                 "benefits_list_item_R6RFTD": {
                   "type": "_benefits_list_item",
-                  "name": "List item",
                   "settings": {
                     "subtitle": "fgfdfdg",
                     "text": "<p>fdgdfgfd</p>"
