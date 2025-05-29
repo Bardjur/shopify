@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const navBtn = Array.from(tabs)
       .map((pane) => {
         return {
-          id: pane.id,
+          id: pane.dataset.tab,
           title: pane.dataset.caption || 'Tab',
         };
       })
