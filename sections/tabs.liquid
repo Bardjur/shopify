@@ -103,11 +103,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     "presets":[{
       "name": "Tabs",
       "blocks": [
-        { "type": "_tab_nav", "settings": { "tab_title": "Tab 1", "tab_order": 1 } },
+        { "type": "_tab_nav",
+          "static": true,
+          "id": "nav-1", 
+          "settings": { "tab_title": "Tab 1", "tab_order": 1 } },
         { "type": "_tab_content", "settings": { "tab_order": 1 } },
-        { "type": "_tab_nav", "settings": { "tab_title": "Tab 2", "tab_order": 2 } },
-        { "type": "_tab_content", "settings": { "tab_order": 2
-         } }
       ]
     }]
   }
