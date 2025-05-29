@@ -66,16 +66,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const tabs = tabsBlock.querySelectorAll(".tabs-body .tab");
   buttons.forEach(btn => btn.addEventListener('click', openTab));
 
-  function openTab(e){
-    console.log('this= ');
-    console.log(this);
-    const activeTab = e.target.dataset.order;
+  function openTab(){
+    const activeTab = this.dataset.order;
     changeClass(activeTab, buttons);
     changeClass(activeTab, tabs);
   }
 
   function changeClass(activeTab, elems){
     elems.forEach(elem => {
+      console.log(elem);
       if( activeTab == elem.dataset.tab){
         elem.classList.add('active')
       } else {
@@ -102,7 +101,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     ],
     "presets":[{
-      "name": "Tabs"
+      "name": "Tabs",
+      "blocks": [
+        { "type": "_tab_nav", "settings": { "tab_title": "Tab 1", "tab_order": 1 } },
+        { "type": "_tab_content", "settings": { "tab_order": 1 } },
+        { "type": "_tab_nav", "settings": { "tab_title": "Tab 2", "tab_order": 2 } },
+        { "type": "_tab_content", "settings": { "tab_order": 2 } }
+      ]
     }]
   }
 {% endschema %}
