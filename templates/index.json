@@ -54,6 +54,38 @@
     "tabs_JEUczF": {
       "type": "tabs",
       "blocks": {
+        "tab_content_D664aw": {
+          "type": "_tab_content",
+          "name": "Tab content",
+          "settings": {
+            "tab_order": 0,
+            "nav_caption": "tab1"
+          },
+          "blocks": {
+            "benefits_pbGHC9": {
+              "type": "benefits",
+              "settings": {
+                "title": ""
+              },
+              "blocks": {
+                "benefits_list_item_Armtfa": {
+                  "type": "_benefits_list_item",
+                  "settings": {
+                    "subtitle": "Subtitle.",
+                    "text": "<p>loream...<p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "benefits_list_item_Armtfa"
+              ]
+            }
+          },
+          "block_order": [
+            "benefits_pbGHC9"
+          ]
+        },
         "tab_content_MzMa9d": {
           "type": "_tab_content",
           "settings": {
@@ -88,6 +120,7 @@
         }
       },
       "block_order": [
+        "tab_content_D664aw",
         "tab_content_MzMa9d"
       ],
       "name": "Tabs",
