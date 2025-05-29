@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   } {% endcomment %}
 
-  console.log({{ section.blocks }})
+  console.log({{ section.blocks | json }})
 
 });
 </script>
