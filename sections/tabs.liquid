@@ -78,8 +78,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   buttons.forEach(btn => btn.addEventListener('click', openTab));
 
   tabs.forEach(tab => {
-    console.log(`[data-tab="tab-${tab.dataset.tab}]"`);
-    tabsBlock.querySelector(`[data-tab="tab-${tab.dataset.tab}"]`).textContent = tab.dataset.caption;
+    tabsBlock.querySelector(`[data-tab="${tab.dataset.tab}"]`).textContent = tab.dataset.caption;
   })
 
   function openTab(){
