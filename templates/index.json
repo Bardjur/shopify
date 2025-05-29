@@ -116,11 +116,44 @@
           "block_order": [
             "collapsible_bBPbtR"
           ]
+        },
+        "tab_content_xma68V": {
+          "type": "_tab_content",
+          "name": "Tab content",
+          "settings": {
+            "nav_caption": "Tab"
+          },
+          "blocks": {
+            "collapsible_RbrJBA": {
+              "type": "collapsible",
+              "name": "Collapsible content",
+              "settings": {
+                "title": "прапрорп"
+              },
+              "blocks": {
+                "collapsible_item_a4YjEt": {
+                  "type": "_collapsible_item",
+                  "settings": {
+                    "heading": "Heading...рпоорпорп",
+                    "text": "<p>Text...</p><p>рпоропропропроп</p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "collapsible_item_a4YjEt"
+              ]
+            }
+          },
+          "block_order": [
+            "collapsible_RbrJBA"
+          ]
         }
       },
       "block_order": [
         "tab_content_bLNji3",
-        "tab_content_N66Lby"
+        "tab_content_N66Lby",
+        "tab_content_xma68V"
       ],
       "name": "Tabs",
       "settings": {
