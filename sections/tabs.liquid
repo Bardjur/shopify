@@ -34,7 +34,7 @@
     background: rgba(255, 255, 255, 0.6);
   }
   .tabs .tab{
-    display:none;
+    /*display:none;*/
   }
   .tabs .tab.active{
     display:block;
@@ -49,7 +49,27 @@
 
   <div class="tabs">
     <div class="tabs-nav">
+        {% for block in section.blocks %}
+          <button 
+            type="button" 
+            class="tab-nav-btn"
+            data-tab="tab-{{ block.id }}"
+          >
+            {{ block.settings.nav_caption }}
+          </button>
+          <script>
 
+          </script>
+        {% endfor %}
+
+
+      <button 
+        type="button" 
+        class="tab-nav-btn" 
+        data-order="1"
+      >
+        TAB
+      </button>
     </div>
 
     <div class="tabs-body">
@@ -62,40 +82,13 @@
 <script>
 document.addEventListener("DOMContentLoaded", (event) => {
    const tabsBlock = document.querySelector(".section-{{ section.id }} .tabs");
-  
-  const nav = tabsBlock.querySelector(".section-{{ section.id }} .tabs-nav");
-  const tabs = tabsBlock.querySelectorAll(".tabs-body .tab");
-
-  const navBtn = Array.from(tabs)
-      .map((pane) => {
-        return {
-          id: pane.dataset.tab,
-          title: pane.dataset.caption || 'Tab',
-        };
-      })
-
-      navBtn.forEach((tab) => {
-      const btn = document.createElement('button');
-      btn.className = 'tab-nav-btn';
-      btn.textContent = tab.title;
-      btn.dataset.tab = tab.id;
-
-{% comment %}       btn.addEventListener('click', () => {
-        // hide all
-        tabPanes.forEach(pane => pane.style.display = 'none');
-        // show selected
-        document.getElementById(tab.id).style.display = 'block';
-
-        // update active tab
-        document.querySelectorAll('.tab-nav-btn').forEach(btn => btn.classList.remove('active'));
-        btn.classList.add('active');
-      }); {% endcomment %}
-
-      nav.appendChild(btn);
-    });
-
   const buttons = tabsBlock.querySelectorAll(".tabs-nav .tab-nav-btn");
+  const tabs = tabsBlock.querySelectorAll(".tabs-body .tab");
   buttons.forEach(btn => btn.addEventListener('click', openTab));
+
+  tabs.forEach(tab => {
+    tabsBlock.querySelector(`[data-tab=tab-${tab.dataset.tab}]`).textContent = tab.dataset.caption;
+  })
 
   function openTab(){
     const activeTab = this.dataset.order;
@@ -113,11 +106,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   } 
-console.log(buttons);
-  tabs.forEach(tab => {
-
-  })
-
 });
 </script>
 
