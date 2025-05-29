@@ -52,7 +52,7 @@
       {% assign my_variable = section.blocks %}
       
         {% for block in my_variable %}
-{%- if block != empty -%}
+{%- if block != empty and block != blank -%}
           <button 
             type="button" 
             class="tab-nav-btn"
